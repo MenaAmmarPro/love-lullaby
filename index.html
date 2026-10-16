@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goodnight, Mena — a lullaby for two</title>
+  <meta name="description" content="A soft place to end the day: tonight's moon, a gentle line, and a goodnight you can send.">
+  <meta property="og:title" content="Goodnight, Mena — a lullaby for two">
+  <meta property="og:description" content="A soft place to end the day: tonight's moon, a gentle line, and a goodnight you can send.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#090b20">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body data-page="lullaby">
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="https://menaammarpro.github.io/">&#9829; Mena &amp; Ammar</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links" aria-label="Main">
+      <a href="https://menaammarpro.github.io/">All projects</a>
+      <a href="https://menaammarpro.github.io/love-starmap/">Star map</a>
+      <a href="https://menaammarpro.github.io/love-memory-jar/">Memory jar</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Lights out</p>
+      <h1>Goodnight, <span>Mena</span></h1>
+      <p class="subtitle">Tonight's moon, one soft line, and a goodnight you can send.</p>
+    </section>
+
+    <p id="sent-note" class="sent-note" hidden></p>
+
+    <section class="panel moon-panel">
+      <div class="moon" id="moon-icon" aria-hidden="true">&#127765;</div>
+      <h2 id="moon-name">—</h2>
+      <p class="moon-note" id="moon-note"></p>
+    </section>
+
+    <section class="panel lullaby-panel">
+      <p id="lullaby-line" class="lullaby-line">Pull a line for tonight.</p>
+      <div class="lullaby-actions">
+        <button id="another" class="button button-ghost" type="button">Another line</button>
+        <button id="goodnight" class="button button-primary" type="button">Goodnight &#127769;</button>
+        <button id="share" class="button button-ghost" type="button">Send a goodnight</button>
+      </div>
+      <p id="note" class="note">&nbsp;</p>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card"><span class="stat-num" id="nights-count">0</span><span class="stat-label">nights together</span></div>
+      <div class="stat-card"><span class="stat-num" id="streak-count">0</span><span class="stat-label">night streak</span></div>
+      <div class="stat-card"><span class="stat-num" id="last-goodnight">never</span><span class="stat-label">last goodnight</span></div>
+    </section>
+
+    <section class="panel info-panel">
+      <h2>A little bedtime ritual</h2>
+      <ul>
+        <li>Breathe with the moon while the line appears.</li>
+        <li><strong>Goodnight</strong> tucks tonight into the log &mdash; come back tomorrow to keep the streak.</li>
+        <li><strong>Send a goodnight</strong> mails the exact link, so it lands right before he sleeps too.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with love, just for you <span aria-hidden="true">&#9829;</span></p>
+    <p class="footer-small">Ammar &rarr; Mena &middot; Karachi &rarr; Bucharest</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>&#8679;</button>
+  <script src="js/theme-main.js" defer></script>
+  <script src="js/effects.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

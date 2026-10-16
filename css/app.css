@@ -1,0 +1,116 @@
+/* love-lullaby — page styles on top of the shared love theme */
+
+main {
+  width: min(1000px, calc(100% - 40px));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.hero {
+  min-height: auto;
+  text-align: center;
+  padding: 2.4rem 1rem 0;
+}
+
+.eyebrow { color: var(--pink); }
+
+.hero h1 { margin: 0.2rem 0 0.4rem; }
+.subtitle { margin: 0; color: var(--muted); }
+
+.sent-note {
+  text-align: center;
+  background: rgba(255, 159, 207, 0.14);
+  border: 1px solid var(--pink-strong);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  margin: 0 auto;
+  max-width: 30rem;
+  color: var(--text);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.3rem 1.4rem;
+  box-shadow: var(--shadow);
+  max-width: 36rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.moon-panel { text-align: center; }
+
+.moon {
+  font-size: 3.4rem;
+  line-height: 1;
+  animation: moon-breathe 6s ease-in-out infinite;
+}
+
+.moon.pulse { animation: moon-breathe 3s ease-in-out infinite; }
+
+@keyframes moon-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+
+.moon-panel h2 { margin: 0.5rem 0 0.2rem; font-size: 1.2rem; }
+
+.moon-note { margin: 0; color: var(--muted); font-size: 0.9rem; }
+
+.lullaby-panel { text-align: center; }
+
+.lullaby-line {
+  font-family: Georgia, "Iowan Old Style", serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0.4rem 0 1rem;
+  min-height: 3em;
+  color: var(--text);
+}
+
+.lullaby-actions {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note { min-height: 1.2em; font-size: 0.85rem; color: var(--muted); margin: 0.7rem 0 0; }
+
+.stats {
+  max-width: 32rem;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.stat-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.8rem 0.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.stat-num { font-size: 1.25rem; font-weight: 700; color: var(--text); }
+.stat-label { font-size: 0.75rem; color: var(--muted); }
+
+.info-panel h2 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+
+.info-panel ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.info-panel strong { color: var(--text); }

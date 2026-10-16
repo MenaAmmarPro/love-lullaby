@@ -1,0 +1,14 @@
+{
+  "name": "Goodnight, Mena — a lullaby for two",
+  "short_name": "Goodnight",
+  "description": "A soft place to end the day: tonight's moon, a gentle line, and a goodnight you can send.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#090b20",
+  "theme_color": "#090b20",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/og-image.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
